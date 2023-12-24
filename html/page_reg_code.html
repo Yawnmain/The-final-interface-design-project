@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="../css/page_reg_code.css" />
+    </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var digits = document.querySelectorAll('.digit');
+
+            var ellipses = document.querySelectorAll('.ellipse');
+
+            var currentEllipseIndex = 0;
+            function changeEllipseColor() {
+                if (currentEllipseIndex === ellipses.length) {
+                    ellipses.forEach(function(ellipse, index) {
+                        ellipse.style.backgroundColor = '#c7ddff'; 
+                        if (index === 0) {
+                            currentEllipseIndex = 0; 
+                        }
+                    });
+                }
+
+                var digit = this.textContent;
+
+                if (currentEllipseIndex < ellipses.length) {
+                    ellipses[currentEllipseIndex].style.backgroundColor = '#0066ff';
+                    currentEllipseIndex++;
+                }
+            }
+            digits.forEach(function(digitElement) {
+                digitElement.addEventListener('click', changeEllipseColor);
+            });
+        });
+    </script>
+    <body>
+        <div class="iphone">
+            <div class="div">
+                <div class="text-wrapper">Регистрация</div>
+                
+                <div class="text-wrapper-4">Придумайте код для входа</div>
+                <div class="arrow-wrapper"><img class="img" src="../images/arrow-4.svg" /></div>
+
+                <div class="code">
+                    <div class="ellipse 1"></div>
+                    <div class="ellipse 2"></div>
+                    <div class="ellipse 3"></div>
+                    <div class="ellipse 4"></div>
+                    <div class="ellipse 5"></div>
+                </div>
+                
+
+                <div class="password-panel">
+                    <div class="digit 1">1</div>
+                    <div class="digit 2">2</div>
+                    <div class="digit 3">3</div>
+                    <div class="digit 4">4</div>
+                    <div class="digit 5">5</div>
+                    <div class="digit 6">6</div>
+                    <div class="digit 7">7</div>
+                    <div class="digit 8">8</div>
+                    <div class="digit 9">9</div>
+                    <div class="no"></div>
+                    <div class="digit 0">0</div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
