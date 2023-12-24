@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="../css/code_page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+    <style>
+      .code-input {
+        width: 2em;
+        text-align: center;
+        margin: 0 0.2em;
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iphone">
+      <div class="div">
+        <div class="text-wrapper">Регистрация</div>
+        <div class="group">
+          <input type="text" class="code-input" maxlength="1" />
+          <input type="text" class="code-input" maxlength="1" />
+          <input type="text" class="code-input" maxlength="1" />
+          <input type="text" class="code-input" maxlength="1" />
+        </div>
+        <div class="text-wrapper-3">Код из смс</div>
+        <div class="arrow-wrapper"><img class="arrow" src="../images/arrow.png" /></div>
+        <div class="overlap-2" id="resendButton">
+            <div class="text-wrapper-4">Отправить еще раз</div>
+            <img class="img" src="../images/arrow2.png" />
+          </div>
+          <div class="overlap-2_2" id="doneButton" style="display: none;">
+            <div class="text-wrapper-4_2">Готово</div>
+          </div>
+        <div class="overlap-3" id="time">
+          <div class="rectangle"></div>
+          <div class="text-wrapper-5">00:30</div>
+        </div>
+        <div class="text-wrapper-6">Есть аккаунт?</div>
+        <div class="text-wrapper-7">Войти</div>
+      </div>
+    </div>
+    
+    <script>
+      const codeInputs = document.querySelectorAll('.code-input');
+      codeInputs.forEach(input => {
+        input.addEventListener('input', function() {
+          this.value = this.value.replace(/\D/g, '');
+        });
+      });
+    const resendButton = document.getElementById('resendButton');
+    const doneButton = document.getElementById('doneButton');
+    const time = document.getElementById('time');
+
+  codeInputs.forEach(input => {
+    input.addEventListener('input', function() {
+      this.value = this.value.replace(/\D/g, '');
+      checkCodeInputs();
+    });
+  });
+
+  function checkCodeInputs() {
+    const filledInputs = Array.from(codeInputs).every(input => input.value.length === 1);
+    if (filledInputs) {
+      resendButton.style.display = 'none';
+      time.style.display = 'none';
+      doneButton.style.display = 'block';
+    } else {
+      resendButton.style.display = 'block';
+      doneButton.style.display = 'none';
+    }
+  }
+
+
+    </script>
+  </body>
+  <script src="../js/done.js"></script>
+</html>

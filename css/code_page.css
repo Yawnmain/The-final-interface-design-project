@@ -1,0 +1,239 @@
+.iphone {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .iphone .div {
+    background-color: #fdfdfd;
+    width: 390px;
+    height: 844px;
+    position: relative;
+  }
+  
+  .iphone .text-wrapper {
+    top: 60px;
+    left: 147px;
+    font-family: "Roboto Flex-Medium", Helvetica;
+    font-weight: 600;
+    color: #32302c;
+    font-size: 16px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .iphone .group {
+    position: absolute;
+    width: 311px;
+    height: 87px;
+    top: 232px;
+    left: 43px;
+  }
+  
+  .iphone .overlap {
+    width: 72px;
+    height: 87px;
+    top: 0;
+    left: 0;
+    background-color: #ebf3ff;
+    position: absolute;
+    border-radius: 9px;
+  }
+  
+  .iphone .text-wrapper-2 {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #93a8c8;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .iphone .overlap-group {
+    width: 72px;
+    height: 87px;
+    top: 0;
+    left: 77px;
+    background-color: #ebf3ff;
+    position: absolute;
+    border-radius: 9px;
+  }
+  
+  .iphone .div-wrapper {
+    width: 72px;
+    height: 87px;
+    top: 0;
+    left: 154px;
+    background-color: #ebf3ff;
+    position: absolute;
+    border-radius: 9px;
+  }
+  
+  .iphone .overlap-group-2 {
+    width: 72px;
+    height: 87px;
+    top: 0;
+    left: 231px;
+    background-color: #ebf3ff;
+    position: absolute;
+    border-radius: 9px;
+  }
+  
+  .iphone .text-wrapper-3 {
+    top: 208px;
+    left: 43px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #32302c;
+    font-size: 13px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .iphone .arrow-wrapper {
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    top: 52px;
+    left: 28px;
+    background-color: #fdfdfd;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  
+  .iphone .overlap-2 {
+    width: 239px;
+    height: 33px;
+    top: 332px;
+    left: 43px;
+    background-color: #0066ff;
+    position: absolute;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  .overlap-2_2{
+    width: 280px;
+    height: 33px;
+    top: 332px;
+    left: 43px;
+    background-color: #0066ff;
+    position: absolute;
+    border-radius: 9px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .overlap-2_2:hover{
+    background-color: #0446aa;
+  }
+  
+  .iphone .text-wrapper-4 {
+    top: 8px;
+    left: 55px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 13px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .text-wrapper-4_2{
+    top: 8px;
+    left: 120px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 13px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .iphone .img {
+    height: 7px;
+    top: 14px;
+    left: 177px;
+    object-fit: cover;
+    position: absolute;
+    width: 8px;
+  }
+  
+  .iphone .overlap-3 {
+    width: 56px;
+    height: 33px;
+    top: 332px;
+    left: 290px;
+    position: absolute;
+    border-radius: 9px;
+  }
+  
+  .iphone .rectangle {
+    position: absolute;
+    width: 56px;
+    height: 33px;
+    top: 0;
+    left: 0;
+    background-color: #c7ddff;
+    border-radius: 9px;
+    transform: rotate(180deg);
+  }
+  
+  .iphone .text-wrapper-5 {
+    top: 8px;
+    left: 11px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #0066ff;
+    font-size: 13px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  
+  .iphone .text-wrapper-6 {
+    top: 778px;
+    left: 132px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #d9e0ed;
+    font-size: 13px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .iphone .text-wrapper-7 {
+    top: 778px;
+    left: 220px;
+    font-family: "Roboto Flex-Light", Helvetica;
+    font-weight: 300;
+    color: #0066ff;
+    font-size: 13px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
