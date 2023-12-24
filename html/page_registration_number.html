@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="../css/page_registration_number.css">
+    <style>
+  </style>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var phoneInput = document.querySelector('.phone-input');
+          var sendCodeButton = document.querySelector('.overlap');
+
+          phoneInput.addEventListener('input', function (event) {
+              var cleanedValue = event.target.value.replace(/\D/g, '');
+              cleanedValue = cleanedValue.slice(0, 11);
+
+              var formattedValue = '+7 (' + cleanedValue.slice(1, 4) + ') ' + cleanedValue.slice(4, 7) + '-' + cleanedValue.slice(7, 9) + '-' + cleanedValue.slice(9);
+
+              event.target.value = formattedValue;
+
+              // Активируем/деактивируем кнопку и меняем цвет в зависимости от наличия валидного номера
+              if (cleanedValue.length === 11) {
+                  sendCodeButton.classList.add('active');
+              } else {
+                  sendCodeButton.classList.remove('active');
+              }
+          });
+      });
+  </script>
+</head>
+<body>
+    <div class="iphone">
+        <div class="div">
+          <div class="group">
+              <div class="overlap-group-wrapper">
+                  <div class="overlap-group">
+                      <input type="tel" class="phone-input" placeholder="+7 (___) ___-__-__">
+                  </div>
+              </div>
+          </div>
+            <div class="text-wrapper-2">Номер телефона</div>
+            <div class="overlap-wrapper">
+                <div class="overlap">
+                    <div class="text-wrapper-3">Отправить код</div>
+                    <img class="arrow" src="../images/arrow-3.svg" />
+                </div>
+            </div>
+            <div class="text-wrapper-4">Регистрация</div>
+            <div class="arrow-wrapper"><img class="img" src="../images/arrow-4.svg" /></div>
+            <div class="group-2">
+                <div class="group-3">
+                    <input type="checkbox" id="phoneBookAccess" class="checkbox"><span>Разрешить доступ к информации телефонной книжки.</span>
+                    <label for="phoneBookAccess" class="checkbox-label"></label>
+                </div>
+                <div class="group-4">
+                    <input type="checkbox" id="dataProcessingConsent" class="checkbox"><span>Нажимая на кнопку вы даете согласие на обработку своих персональных данных</span>
+                    <label for="dataProcessingConsent" class="checkbox-label"></label>
+                </div>
+            </div>
+            <div class="group-5">
+                <div class="text-wrapper-5">Есть аккаунт?</div>
+                <div class="text-wrapper-6">Войти</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
