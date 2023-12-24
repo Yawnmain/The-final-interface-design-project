@@ -98,6 +98,7 @@
     width: 144px;
     height: 127px;
     top: 490px;
+    margin-top: -26px;
     left: 20px;
     background-color: #f9f9f9;
     border-radius: 11px;
@@ -172,6 +173,7 @@
     position: absolute;
     width: 30px;
     height: 15px;
+    margin-top: -30px;
     top: 621px;
     left: 32px;
 }
@@ -204,6 +206,7 @@
     position: absolute;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
+    margin-top: -30px;
     font-size: 13px;
     letter-spacing: 0;
     line-height: normal;
@@ -214,6 +217,7 @@
     width: 65px;
     height: 25px;
     top: 453px;
+    margin-top: -20px;
     left: 20px;
     background-color: #afafaf;
     border-radius: 20px;
@@ -266,6 +270,7 @@
     width: 33px;
     height: 25px;
     top: 453px;
+    margin-top: -20px;
     left: 87px;
     border-radius: 20px;
 }
@@ -330,6 +335,7 @@
     width: 199px;
     height: 97px;
     top: 698px;
+    margin-top: -45px;
     left: 20px;
     background-color: #f9f9f9;
     border-radius: 11px;
@@ -380,6 +386,7 @@
 .iphone-plus .text-wrapper-13 {
     top: 800px;
     left: 33px;
+    margin-top: -45px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
@@ -392,6 +399,7 @@
 .iphone-plus .text-wrapper-14 {
     top: 799px;
     left: 153px;
+    margin-top: -45px;
     color: #eeeeee;
     position: absolute;
     font-family: "Inter-Regular", Helvetica;
@@ -406,6 +414,7 @@
     width: 111px;
     height: 25px;
     top: 661px;
+    margin-top: -40px;
     left: 20px;
     background-color: #afafaf;
     border-radius: 20px;
@@ -1056,6 +1065,8 @@
     position: absolute;
     width: 428px;
     height: 90px;
+    margin-top: -60px;
+
     top: 836px;
     left: 0;
     margin-left: -19px;
