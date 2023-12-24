@@ -34,6 +34,34 @@
                 digitElement.addEventListener('click', changeEllipseColor);
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var digits = document.querySelectorAll('.digit');
+    var ellipses = document.querySelectorAll('.ellipse');
+    var filledEllipses = 0; // Для отслеживания заполненных эллипсов
+
+    function checkFilledEllipses() {
+        filledEllipses++;
+
+        if (filledEllipses === ellipses.length) {
+            // При заполнении всех эллипсов - переходим на страницу wallet_page.html
+            window.location.href = 'piggy_bank_sberbank.html';
+        }
+    }
+
+    digits.forEach(function(digitElement) {
+        digitElement.addEventListener('click', function() {
+            // Добавьте логику изменения цвета эллипсов при клике на цифры
+            var currentEllipse = ellipses[filledEllipses];
+            if (currentEllipse) {
+                currentEllipse.style.backgroundColor = '#0066ff';
+                checkFilledEllipses();
+            }
+        });
+    });
+});
+
+
     </script>
     <body>
         <div class="iphone">
