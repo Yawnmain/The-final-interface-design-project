@@ -114,6 +114,17 @@ html, body {
   width: 8px;
 }
 
+.iphone .arrow-wrapper {
+  position: absolute;
+  width: 40px;
+  height: 37px;
+  top: 40px;
+  left: 15px;
+  background-color: #fdfdfd;
+  border-radius: 9px;
+}
+
+
 .iphone .text-wrapper-4 {
   top: 60px;
   left: 147px;
@@ -127,15 +138,6 @@ html, body {
   white-space: nowrap;
 }
 
-.iphone .arrow-wrapper {
-  position: absolute;
-  width: 40px;
-  height: 37px;
-  top: 40px;
-  left: 15px;
-  background-color: #fdfdfd;
-  border-radius: 9px;
-}
 
 .iphone .img {
   height: 40px;
@@ -236,4 +238,13 @@ span {
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+}
+
+button{
+  border: 0;
+  background-color: white;
+}
+
+.text-wrapper-6:active{
+  color: #063883;
 }
