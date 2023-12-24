@@ -42,13 +42,13 @@
           </div>
             <div class="text-wrapper-2">Номер телефона</div>
             <div class="overlap-wrapper">
-                <button class="overlap">
+                <button class="overlap" id="sendCodeButton">
                     <div class="text-wrapper-3">Отправить код</div>
                     <img class="arrow" src="../images/arrow-3.svg" />
                 </button>
             </div>
             <div class="text-wrapper-4">Регистрация</div>
-            <div class="arrow-wrapper"><img class="img" src="../images/arrow-4.svg" /></div>
+            <a href="start_page.html"><div class="arrow-wrapper"><img class="img" src="../images/arrow-4.svg" /></div></a>
             <div class="group-2">
                 <div class="group-3">
                     <input type="checkbox" id="phoneBookAccess" class="checkbox"><span>Разрешить доступ к информации телефонной книжки.</span>
@@ -61,9 +61,20 @@
             </div>
             <div class="group-5">
                 <div class="text-wrapper-5">Есть аккаунт?</div> 
-                <button class="text-wrapper-6">Войти</button>
+                <a href=""><button class="text-wrapper-6">Войти</button></a>
             </div>
         </div>
     </div>
 </body>
+<script>
+    // Находим кнопку по ее ID
+    var sendCodeButton = document.getElementById('sendCodeButton');
+
+    // Добавляем обработчик события 'click'
+    sendCodeButton.addEventListener('click', function() {
+        // Переходим на страницу 'page_reg_code' при клике на кнопку
+        window.location.href = 'page_reg_code.html';
+    });
+</script>
+
 </html>
