@@ -34,6 +34,34 @@
                 digitElement.addEventListener('click', changeEllipseColor);
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var digits = document.querySelectorAll('.digit');
+    var ellipses = document.querySelectorAll('.ellipse');
+    var filledEllipses = 0; // Для отслеживания заполненных эллипсов
+
+    function checkFilledEllipses() {
+        filledEllipses++;
+
+        if (filledEllipses === ellipses.length) {
+            // При заполнении всех эллипсов - переходим на страницу wallet_page.html
+            window.location.href = 'piggy_bank_sberbank.html';
+        }
+    }
+
+    digits.forEach(function(digitElement) {
+        digitElement.addEventListener('click', function() {
+            // Добавьте логику изменения цвета эллипсов при клике на цифры
+            var currentEllipse = ellipses[filledEllipses];
+            if (currentEllipse) {
+                currentEllipse.style.backgroundColor = '#0066ff';
+                checkFilledEllipses();
+            }
+        });
+    });
+});
+
+
     </script>
     <body>
         <div class="iphone">
@@ -41,7 +69,7 @@
                 <div class="text-wrapper">Регистрация</div>
                 
                 <div class="text-wrapper-4">Придумайте код для входа</div>
-                <div class="arrow-wrapper"><img class="img" src="../images/arrow-4.svg" /></div>
+                <a href="page_registration_number.html"><div class="arrow-wrapper"><img class="img" src="../images/arrow-4.svg" /></div></a>
 
                 <div class="code">
                     <div class="ellipse 1"></div>

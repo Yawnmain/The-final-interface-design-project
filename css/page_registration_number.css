@@ -90,7 +90,14 @@ html, body {
 
 .iphone .overlap.active {
   background-color: #0066ff; /* Цвет кнопки при активации */
+  cursor: pointer;
 }
+
+.iphone .overlap.active:hover {
+  background-color: #0550c0; /* Цвет кнопки при активации */
+  cursor: pointer;
+}
+
 
 .iphone .text-wrapper-3 {
   top: 9px;
@@ -112,6 +119,7 @@ html, body {
   object-fit: cover;
   position: absolute;
   width: 8px;
+
 }
 
 .iphone .arrow-wrapper {
@@ -122,6 +130,7 @@ html, body {
   left: 15px;
   background-color: #fdfdfd;
   border-radius: 9px;
+  cursor: pointer;
 }
 
 
@@ -238,6 +247,7 @@ span {
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 button{
