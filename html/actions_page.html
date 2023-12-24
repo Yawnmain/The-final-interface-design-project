@@ -6,8 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="overlay">
+            <div id="modal">
+              <span class="modal-close" onclick="closeModal()">x</span>
+              <p>Добавить изменения</p>
+                <span>Название</span>
+              <input type="text" id="name" placeholder="Введите данные 1" >
+              <span>Категория</span>
+              <select id="category">
+                <option value="">Выберите данные</option>
+                <option value="Еда">Еда</option>
+                <option value="Покупки">Покупки</option>
+                <option value="Другое">Другое</option>
+              </select>
+              <span>Карта</span>
+              <select id="card">
+                <option value="">Выберите данные</option>
+                <option value="Карта 1">Карта 1</option>
+                <option value="Карта 2">Карта 2</option>
+              </select>
+              <span>Сумма</span>
+              <input type="number" id="sum" placeholder="Введите данные 2">
+              <span>Комментарий</span>
+              <input type="text" id="comment" placeholder="Введите данные 2">
+              <button onclick="addData()">Добавить</button>
+            </div>
+          </div>
         <div class="iphone-plus">
-            <div class="div">
+            <div id="data-container" class="div">
                 <div class="group">
                     <div class="ellipse"></div>
                     <div class="ellipse-2"></div>
@@ -113,7 +139,7 @@
                 </div>
                 <div class="group-5">
                     <div class="group-6">
-                        <div class="overlap-group-9">
+                        <div onclick="openModal()" class="overlap-group-9">
                             <div class="overlap-5">
                                 <div class="rectangle-14"></div>
                                 <div class="rectangle-15"></div>
@@ -132,7 +158,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-wrapper-20">На этом всё</div>
+                
+                
                 <div class="frame">
                     <a href="actions_page.html"><div class="group-8">
                         <div class="rectangle-wrapper"><div class="rectangle-17"></div></div>
@@ -167,5 +194,6 @@
                 </div>
             </div>
         </div>
+        <script src="../js/actions_page.js"></script>
     </body>
 </html>
