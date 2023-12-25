@@ -1,5 +1,5 @@
 let counter = 13; 
-  
+
     function openModal() {
       const overlay = document.getElementById("overlay");
       const modal = document.getElementById("modal");
@@ -21,7 +21,7 @@ let counter = 13;
       document.getElementById("sum").value = "";
       document.getElementById("comment").value = "";
     }
-  
+    addEventListener
     function addData() {
       const name = document.getElementById("name");
       const category = document.getElementById("category");
@@ -76,3 +76,40 @@ let counter = 13;
   
       closeModal(); 
     }
+
+const info_btn1 = document.querySelector('.overlap-group-2')
+const info_btn2 = document.querySelector('.overlap-group-3')
+
+
+info_btn1.addEventListener('click', function() {
+  const overlay = document.getElementById("overlay");
+  const info = document.querySelector('.info1');
+
+  overlay.style.display = "block";
+  info.style.display = "block"; 
+})
+
+    function closeInfo1() {
+      const overlay = document.getElementById("overlay");
+      const info = document.querySelector('.info1');
+  
+      overlay.style.display = "none";
+      info.style.display = "none";
+    }
+
+info_btn2.addEventListener('click', function() {
+  const overlay = document.getElementById("overlay");
+  const info = document.querySelector('.diva2');
+
+  overlay.style.display = "block";
+  info.style.display = "flex"; 
+})
+
+
+function closeInfo2() {
+  const overlay = document.getElementById("overlay");
+  const info = document.querySelector('.diva2');
+
+  overlay.style.display = "none";
+  info.style.display = "none";
+}

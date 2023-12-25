@@ -11,25 +11,81 @@
               <span class="modal-close" onclick="closeModal()">x</span>
               <p>Добавить изменения</p>
                 <span>Название</span>
-              <input type="text" id="name" placeholder="Введите данные 1" >
+              <input type="text" id="name" placeholder="Введите название" >
               <span>Категория</span>
               <select id="category">
-                <option value="">Выберите данные</option>
+                <option value="">Выберите категорию</option>
                 <option value="Еда">Еда</option>
                 <option value="Покупки">Покупки</option>
                 <option value="Другое">Другое</option>
               </select>
               <span>Карта</span>
               <select id="card">
-                <option value="">Выберите данные</option>
+                <option value="">Выберите карту</option>
                 <option value="Карта 1">Карта 1</option>
                 <option value="Карта 2">Карта 2</option>
               </select>
               <span>Сумма</span>
-              <input type="number" id="sum" placeholder="Введите данные 2">
+              <input type="number" id="sum" placeholder="Введите сумму">
               <span>Комментарий</span>
-              <input type="text" id="comment" placeholder="Введите данные 2">
-              <button onclick="addData()">Добавить</button>
+              <input type="text" id="comment" placeholder="Напишите комментарий">
+              <button class="add_btn" onclick="addData()">Добавить</button>
+            </div>
+            <div class="info1">
+                <div class="groupa">
+                    <div class="overlap-groupa">
+                        <div class="rectanglea"></div>
+                        <div onclick="closeInfo1()" class="diva"></div>
+                    </div>
+                </div>
+                <div class="overlapa">
+                    <div class="text-wrappera">Купил шаурму</div>
+                    <div class="text-wrapper-2a">12.07.2023</div>
+                </div>
+                <div class="rectangle-wrappera"><div class="rectangle-2a"></div></div>
+                <img class="imga" src="img/rectangle-21582124.png" />
+                <div class="overlap-2a">
+                    <div class="rectangle-3a"></div>
+                    <div class="ellipsea"></div>
+                    <div class="rectangle-4a"></div>
+                    <div class="rectangle-5a"></div>
+                    <img class="rectangle-6a" src="img/rectangle-21582127.svg" />
+                </div>
+                <div class="text-wrapper-3a">-100</div>
+                <img class="imagea" src="img/image-64.png" />
+                <div class="div-wrappera"><div class="text-wrapper-4a">Без комментария</div></div>
+            </div>
+            <div class="info2">
+                <div class="group-wrappera2">
+                    <div class="groupa2">
+                        <div class="diva2">
+                            <div class="overlap-group-wrappera2">
+                                <div class="overlap-groupa2">
+                                    <div class="rectanglea2"></div>
+                                    <div onclick="closeInfo2()" class="rectangle-2a2"></div>
+                                </div>
+                            </div>
+                            <div class="text-wrappera2">Заработал</div>
+                            <div class="overlapa2">
+                                <div class="rectangle-3a2"></div>
+                                <div class="rectangle-4a2"></div>
+                            </div>
+                            <img class="imga2" src="img/rectangle-21582124.png" />
+                            <div class="text-wrapper-2a2">+2000</div>
+                            <img class="imagea2" src="img/image-64.png" />
+                            <div class="div-wrappera2"><div class="text-wrapper-3a2">В магазе</div></div>
+                            <div class="text-wrapper-4a2">12.07.2023</div>
+                            <div class="overlap-2a2">
+                                <div class="ellipsea2"></div>
+                                <div class="rectangle-5a2"></div>
+                            </div>
+                            <div class="overlap-3a2">
+                                <div class="rectangle-6a2"></div>
+                                <img class="rectangle-7a2" src="img/rectangle-21582127.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         <div class="iphone-plus">
@@ -39,7 +95,7 @@
                     <div class="ellipse-2"></div>
                 </div>
                 <div class="overlap">
-                    <div class="text-wrapper">13200</div>
+                    <div id="info-a" class="text-wrapper">13200</div>
                     <img class="img" src="../images/chel.png" />
                 </div>
                 <img class="image" src="../images/rub.png" />
@@ -138,7 +194,7 @@
                     <div class="rectangle-13"></div>
                 </div>
                 <div class="group-5">
-                    <div class="group-6">
+                    <div  class="group-6">
                         <div onclick="openModal()" class="overlap-group-9">
                             <div class="overlap-5">
                                 <div class="rectangle-14"></div>
