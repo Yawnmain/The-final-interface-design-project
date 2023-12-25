@@ -17,7 +17,7 @@
         <img class="image" src="../images/rub.png" style="margin-left: -10px;" />  <!--13200-->
         <div class="ellipse"></div>
         <div class="ellipse-2"></div>
-        <img class="img" src="../images/plus.svg" />   <!--add card-->
+        <img class="img" src="../images/plus.svg" onclick="openPopup()" /> <!--add card-->
         <div class="overlap-group">
           <div class="text-wrapper-2">Кредит</div>
           <div class="overlap-2">
@@ -235,7 +235,62 @@
             <div class="text-wrapper-31">Планы</div>
           </div></a>
         </div>
+        <div id="overlay" class="overlay" onclick="closePopup()"></div>
+<div id="popup" class="popup">
+    <div class="frame-2">
+        <div class="text-wrapper-34">Добавление карты</div>
+        <div class="group-18" onclick="closePopup()">
+            <div class="overlap-group-5">
+                <div class="rectangle-45"></div>
+                <div class="rectangle-46"></div>
+            </div>
+        </div>
+        <div class="group-19">
+            <div class="overlap-34">
+                <img class="rectangle-47" src="../images/sberbank.svg">
+                <img class="arrow" src="../images/arrow_down.svg">
+                <div class="text-wrapper-35">Сбербанк</div>
+            </div>
+            <div class="text-wrapper-36">Банк</div>
+        </div>
+        <div class="overlap-25">
+            <div class="group-20">
+                <div class="group-21"></div>
+                <div class="rectangle-48"></div>
+                <div class="text-wrapper-36">Номер карты</div>
+                <div class="text-wrapper-37">Кол-во денег на карте</div>
+                <div class="text-wrapper-38">ММ/ГГ</div>
+            </div>
+            <div class="element">1234&nbsp;&nbsp;6312&nbsp;&nbsp;2883&nbsp;&nbsp;8132</div>
+            <div class="rectangle-49"></div>
+            <div class="text-wrapper-39">03/24</div>
+            <div class="rectangle-50"></div>
+            <img class="image-9" src="../images/rub.png">
+            <div class="text-wrapper-40">12300</div>
+        </div>
+        <div class="group-22">
+            <a href="../html/piggy_bank_new.html" class="button-wrapper">
+                <div class="overlap-26">
+                    <div class="text-wrapper-41">Добавить карту</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
       </div>
     </div>
+    <script>
+        function openPopup() {
+          document.getElementById('overlay').style.display = 'block';
+          document.getElementById('popup').style.display = 'block';
+        }
+      
+        function closePopup() {
+          document.getElementById('overlay').style.display = 'none';
+          document.getElementById('popup').style.display = 'none';
+        }
+      </script>
+      
   </body>
 </html>
